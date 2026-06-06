@@ -1,0 +1,17 @@
+{
+  "name": "jazblog",
+  "version": "1.0.0",
+  "description": "Full-stack blog system with React and Express",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "deploy": "cd frontend && npm run deploy"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
